@@ -11,6 +11,8 @@ Cuis has **LayoutMorphs** which do this for their submorphs.
 
 Let's see how.
 
+Note: For a Cuis version younger than September 2024 see note at the end. The morph hierarchy has been changed. Instead of BoxedMorph you have to use ColoredBoxMorph.
+
 ### Getting the layout edit panels
 
 First we will load two tools to help us see how **LayoutMorphs** and **LayoutSpecs** are used and what they do.
@@ -211,6 +213,17 @@ By now I expect that you know what the buttons do and can play all day with layo
 You can use the layout and layoutSpec edit panels to test how you want your Morphs to resize within their containers.
 
 LayoutMorphs can be nested and given their own LayoutSpecs.
+
+In a Cuis Smalltalk younger than September 2024
+
+````Smalltalk
+| myLayout |
+myLayout := LayoutMorph newRow.
+myLayout position: 200@300 extent: 400@300; color: Color lightBlue; openInWorld.
+myLayout addMorph: (ColoredBoxMorph new :: color: Color blue; yourself).
+myLayout addMorph: EllipseMorph new; addMorph: ImageMorph new.
+myLayout openInWorld.
+````
 
 
 In Part 2 on Layouts, we will look at the code for setting up layouts and exploring them by looking at the Color Editor tool.
