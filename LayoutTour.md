@@ -43,7 +43,7 @@ I select the new text and type Cmd-d (DoIt) and see ... not much has changed, ex
 Ah!  Let me open it in the current Cuis World.  The Cuis backdrop is a PasteUpMorph which we call the World.
 
 ````Smalltalk
-myLayout morphPosition: 200@300 extent: 400@300; color: Color lightBlue; openInWorld.
+myLayout morphPosition: 200@300;  morphExtent: 400@300; color: Color lightBlue; openInWorld.
 ````
 
 I took a shortcut here.  I sent three messages on one line.  The ';' (semicolon) character introduces a **cascade**.  What a cascade does is to send messages to the original recever object.
@@ -51,7 +51,8 @@ I took a shortcut here.  I sent three messages on one line.  The ';' (semicolon)
 So the above is the same as typing:
 
 ````Smalltalk
-myLayout morphPosition: 200@300 extent: 400@300.
+myLayout morphPosition: 200@300.
+myLayout morphExtent: 400@300.
 myLayout color: Color lightBlue.
 myLayout openInWorld.
 ````
@@ -63,7 +64,7 @@ myLayout openInWorld.
 Well, a lightBlue rectangle is not much to work with.  Let's add a few submorphs -- morphs which are contained within the lightBlue LayoutMorph.
 
 ````Smalltalk
-myLayout addMorph: (BoxedMorph new :: color: Color blue; yourself).
+myLayout addMorph: (ColoredBoxMorph new :: color: Color blue; yourself).
 ````
 ![Cuis Window](LayoutTour/Layout4.png)
 
@@ -72,16 +73,16 @@ This introduces a different shortcut: "::".  The double-colon acts like ";" exce
 If we had typed
 
 ````Smalltalk
-  BoxedMorph new ; color: Color blue;
+  ColoredBoxMorph new ; color: Color blue;
 ````
 
-the #color: message would have been sent to the **BoxedMorph** class, the target of the original message.
+the #color: message would have been sent to the **ColoredBoxedMorph** class, the target of the original message.
 
 ````Smalltalk
-  BoxedMorph new :: color: Color blue
+  ColoredBoxMorph new :: color: Color blue
 ````
 
-on the other hand sends #color: to the result of (BoxedMorph new), which is a new instance of a BoxedMorph.
+on the other hand sends #color: to the result of (ColoredBoxedMorph new), which is a new instance of a ColoredBoxedMorph.
   Using a cascade with #yourself allows us to get the target receiver, the BoxedMorph, which is then the argument to #addMorph: message sent to our LayoutMorph.
 
 Whew!  OK.  No more shortcuts.  But these two shortcuts, cascade and chain, are very useful.
@@ -142,7 +143,7 @@ EdgeWeight Botton and Update.
 
 ![Cuis Window](LayoutTour/Layout13.png)
 
-If you put your mouse pointer over the box on the right of X or Y its content will highlight. Type a value and it will overwrite what is already there. Put '10' in each box.
+If you put your mouse pointer over the box on the Gap Between Morphs content will highlight. Type a value and it will overwrite what is already there. Put '10' in each box.
 
 The press Update.
 
@@ -194,7 +195,7 @@ Let's set the Width to a Fixed 80 pixels and the Height to 40% of the container,
 
 So when you resize the layout, the Ellipse keeps the same width, but its height is maintained at approxumately 40% of the LayoutMorph.
 
-Command click on the blue BoxedMorph, select 'edit my layoutspec' from its context menu, move the layoutspec edit panel aside and click on its push-pin.
+Command click on the blue ColoredBoxedMorph, select 'edit my layoutspec' from its context menu, move the layoutspec edit panel aside and click on its push-pin.
 
 Now set its Height to Proportional 50% with a minimum of 10 pixels.  Perhaps a Proportional Width of 80% and min 30 pixels.  Click Update.
 
