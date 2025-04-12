@@ -64,6 +64,9 @@ Take a look at how ***LayoutMorphs*** are used to maintain visual relations betw
 
 Look at the ***Terse Guide*** (World Menu -> Help -> Terse Guide to Cuis)
 
+Read ***About Cuis*** !!
+- https://github.com/Cuis-Smalltalk/Cuis-Smalltalk-Dev/blob/master/Documentation/AboutCuis.md
+
 Look at ***documentation*** available for other wonderful Smalltalk implementations
 - http://squeak.org/documentation/
 - http://stephane.ducasse.free.fr/FreeBooks.html
