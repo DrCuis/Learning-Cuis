@@ -77,7 +77,7 @@ Take a ***detailed tour*** which creates a Package and a GitHub repository for i
 
 Software 'code' is meant to be read as well as written.  Well written software is something we all work on getting better at.  There are some cool Cuis packages on GitHib.
 
-Look at the ***repositories in GitHub*** with names starting 'Cuis-Smalltalk'.  Many of these have a 'RoughGuide.md' file which points out code topics and techniques of interest.
+Look at the ***repositories in GitHub*** with names starting 'Cuis-Smalltalk'.
 
 View videos on the Cuis Smalltalk YouTube Channel
 - https://www.youtube.com/playlist?list=PLbevs6Mp0MMMaR5gSYzJQXQ56OplFSCJk
@@ -99,66 +99,4 @@ Examples of Cuis Smalltalk with interesting Features are described in 'PackageRe
 * Life
 * Construction
 
-
-I find it best to "git clone" repositories in a common directory, in my case named 'Cuis-Smalltalk'.
-
-You can get the standard repositories using a script in 'Cuis-Smalltalk-Dev'.
-
-This is how it looks using Linux.
-
-````
-mkdir Cuis-Smalltalk
-cd Cuis-Smalltalk
-git clone https://github.com/Cuis-Smalltalk/Cuis-Smalltalk-Dev
-Cuis-Smalltalk-Dev/clonePackageRepos.sh
-cd Cuis-Smalltalk-Dev
-squeak Cuis<version>.image "squeak is name of OpenSmalltalk VM"
-````
-Ask for a feature in a workspace
-````Smalltalk
-  Feature require: #'Morphic-ColorEditor'.
-````
-Select the code and "do-it" (cmd-d).
-
-If all went well, you should be able to open a ColorEditor via the World Menu -> New morph.. -> ColorEditor -> ColorEditorPanel
-
-To keep repositories up to date, periodically:
-````
-cd Cuis-Smalltalk/Cuis-Smalltalk-Dev
-./pullAllRepos.sh
-````
-
 ***Enjoy!***
-
-
-
-
-# Contributors:
-
-The basic goals here are to develop a strategy which is
-- Easy to contribute to
-- Orienting and useful to people learning Cuis/Smalltalk
-- Simple enough that we will bother to maintain it and not step (often) on each others feet.
-
-The gist is that we, the Cuis community, maintain an overview/README.md page, then just add our own mature/example projects to the list of interesting repositories.
-
-Each Project should supply a 'RoughGuide.md', which describes what the interesting bits of code are, as well as the Project 'README.md' which should
-- Name the project/feature(s) -- what is this good for, what does it do?
-- List the latest Cuis version+revision the code was tested with.
-- Show the Smalltalk code to load the package(s).
-- Have useful code/usage examples.
-- Optionally, show a screen graphic (what does this look like?)
-
-All project repositories should be named with prefix 'Cuis-Smalltalk-'.
-
-For an example. look at the Cuis-Smalltalk-ColorEditor repository.
-
-ToDo:
-
--  Using the Styled Text Editor, we start and maintain a Rough Guide to Cuis (Cuis-by-Example).  After the general Smalltalk and Cuis overviews, we can write about parts of the system, patterns of how to get things done, and use forked project examples.
-
-I suspect it would not be too much work to embed Smalltalk WorkSheets (TerseGuide WorkSpaces) as objects in STE, which would allow us to have nice live examples.  Projects could contribute chapters.
-
-Open a FileList after loading STE, select MorphBecomeButton.object and click on button "openSTE" to see some interesting code.
-
-Enjoy!
