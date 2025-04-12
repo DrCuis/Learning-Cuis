@@ -57,7 +57,7 @@ Take a look at ***Quick-UI-Tour*** (click on file 'Quick-UI-Tour.md' above or)
 - https://github.com/Cuis-Smalltalk/Learning-Cuis/blob/master/Quick-UI-Tour.md
 
 Read ***TheCuisBook*** !!
-- https://cuis-smalltalk.github.io/TheCuisBook/
+- https://drcuis.github.io/TheCuisBook/
 
 Take a look at how ***LayoutMorphs*** are used to maintain visual relations between graphic elements:
 - https://github.com/Cuis-Smalltalk/Learning-Cuis/blob/master/LayoutTour.md
