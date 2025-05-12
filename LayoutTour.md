@@ -1,4 +1,4 @@
-Exploring morph layouts in Cuis
+Exploring Morph layouts in Cuis
 ===============================
 
 This file is about how graphic entities, **Morphs**, may change as they are resized.
@@ -32,7 +32,7 @@ Let's create a LayoutMorph to see what it does.
 	myLayout _ LayoutMorph newRow.
 ````
 
-Note how the **underscore character** gets represented in Cuis as a backward pointing arrow. This is a nice way to keep assignment completely separated from the equality concept. Alternatively, instead of `_` you can type `:=` as in Pascal. 
+Note how the **underscore character** gets represented in Cuis as a backward-pointing arrow. This is a nice way to keep assignment completely separated from the equality concept. Alternatively, instead of `_` you can type `:=` as in Pascal. 
 
 Note how the "syntax hilighting" in Cuis helps.  Class names are bold+black, message names are blue, symbols (#) are bold+blue.  "myLayout" is initially undefined (unrecognized) and shows up in red. This is temporary. 
 
@@ -40,13 +40,13 @@ I select the new text and type Cmd-d (DoIt) and see ... not much has changed, ex
 
 ![Cuis Window](LayoutTour/Layout2.png)
 
-Ah!  Let me open it in the current Cuis World.  The Cuis backdrop is a PasteUpMorph which we call the World.
+Ah! Let me open it in the current Cuis World.  The Cuis backdrop is a PasteUpMorph which we call the World.
 
 ````Smalltalk
 myLayout morphPosition: 200@300;  morphExtent: 400@300; color: Color lightBlue; openInWorld.
 ````
 
-I took a shortcut here.  I sent three messages on one line.  The ';' (semicolon) character introduces a **cascade**.  What a cascade does is to send messages to the original recever object.
+I took a shortcut here.  I sent three messages on one line.  The ';' (semicolon) character introduces a **cascade**.  What a cascade does is to send messages to the original receiver object.
 
 So the above is the same as typing:
 
@@ -61,7 +61,7 @@ myLayout openInWorld.
 
 ### Add submorphs
 
-Well, a lightBlue rectangle is not much to work with.  Let's add a few submorphs -- morphs which are contained within the lightBlue LayoutMorph.
+Well, a lightBlue rectangle is not much to work with.  Let's add a few submorphs -- morphs that are contained within the lightBlue LayoutMorph.
 
 ````Smalltalk
 myLayout addMorph: (ColoredBoxMorph new :: color: Color blue; yourself).
@@ -83,7 +83,8 @@ the #color: message would have been sent to the **ColoredBoxedMorph** class, the
 ````
 
 on the other hand sends #color: to the result of (ColoredBoxedMorph new), which is a new instance of a ColoredBoxedMorph.
-  Using a cascade with #yourself allows us to get the target receiver, the BoxedMorph, which is then the argument to #addMorph: message sent to our LayoutMorph.
+  
+Using a cascade with #yourself allows us to get the target receiver, the BoxedMorph, which is then the argument to the #addMorph: message sent to our LayoutMorph.
 
 Whew!  OK.  No more shortcuts.  But these two shortcuts, cascade and chain, are very useful.
 
@@ -145,9 +146,9 @@ EdgeWeight Botton and Update.
 
 If you put your mouse pointer over the box on the Gap Between Morphs content will highlight. Type a value and it will overwrite what is already there. Put '10' in each box.
 
-The press Update.
+Then press Update.
 
-You should now have a 10 pixel space between the submorphs.
+You should now have a 10-pixel space between the submorphs.
 
 ![Cuis Window](LayoutTour/Layout14.png)
 
@@ -165,7 +166,7 @@ Note that the original command-click halos the outer Morph.  Each additional cli
 
 Move the LayoutSpec edit panel to see the LayoutMorph and click on its push-pin to keep it around.
 
-You should have a World which looks something like the following
+You should have a World which looks something like the following:
 
 ![Cuis Window](LayoutTour/Layout15.png)
 
@@ -181,7 +182,7 @@ By the way, we are starting to get a number of edit panels up.  It can get confu
 
 So it is always easy to find out who is being edited.
 
-OK.  Let's change the column back into a row.  Click on Row radio button and then the Left button in the _layout_ edit panel and Update to see the other orientation. What do you think will happen?
+OK.  Let's change the column back into a row.  Click on the Row radio button and then the Left button in the _layout_ edit panel and Update to see the other orientation. What do you think will happen?
 
 ![Cuis Window](LayoutTour/Layout18.png)
 
@@ -189,19 +190,19 @@ You guessed it. The ellipse is now on the top of the row instead of the left of 
 
 What else can we do with LayoutSpecs?
 
-Let's set the Width to a Fixed 80 pixels and the Height to 40% of the container, with a 10 pixel minimum and Update.
+Let's set the Width to a Fixed 80 pixels and the Height to 40% of the container, with a 10-pixel minimum and Update.
 
 ![Cuis Window](LayoutTour/Layout19.png)
 
-So when you resize the layout, the Ellipse keeps the same width, but its height is maintained at approxumately 40% of the LayoutMorph.
+So when you resize the layout, the Ellipse keeps the same width, but its height is maintained at approximately 40% of the LayoutMorph.
 
-Command click on the blue ColoredBoxedMorph, select 'edit my layoutspec' from its context menu, move the layoutspec edit panel aside and click on its push-pin.
+Command-click on the blue ColoredBoxedMorph, select 'edit my layoutspec' from its context menu, move the layoutspec edit panel aside and click on its push-pin.
 
 Now set its Height to Proportional 50% with a minimum of 10 pixels.  Perhaps a Proportional Width of 80% and min 30 pixels.  Click Update.
 
 ![Cuis Window](LayoutTour/Layout20.png)
 
-Lets resize the lightBlue LayoutMorph to see how things are kept in place.
+Let's resize the lightBlue LayoutMorph to see how things are kept in place.
 
 If you 'show halo' from the layout edit panel or command-click on the lightBlue rectangle, you can drag the yellow _grab handle_ on the lower right corner of the LayoutMorph to change its size dynamically.
 
