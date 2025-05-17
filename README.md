@@ -53,14 +53,14 @@ This project is all about learning Cuis and sharing Cuis code which others may f
 
 ***Get Cuis*** from https://github.com/Cuis-Smalltalk/Cuis-Smalltalk-Dev
 
-Take a look at ***Quick-UI-Tour*** (click on file 'Quick-UI-Tour.md' above or)
-- https://github.com/Cuis-Smalltalk/Learning-Cuis/blob/master/Quick-UI-Tour.md
+Take a look at ***Quick-UI-Tour***
+- https://github.com/DrCuis/Tutorials/blob/main/100-Quick-Tour/README.md
 
 Read ***TheCuisBook***
 - https://drcuis.github.io/TheCuisBook/
 
 Take a look at how ***LayoutMorphs*** are used to maintain visual relations between graphic elements:
-- https://github.com/Cuis-Smalltalk/Learning-Cuis/blob/master/LayoutTour.md
+- https://github.com/DrCuis/How-to-guides/blob/main/200-Layout/210-Layout-Tour/README.md
 
 Look at the ***Terse Guide*** (World Menu -> Help -> Terse Guide to Cuis)
 
@@ -72,7 +72,7 @@ Look at ***documentation*** available for other wonderful Smalltalk implementati
 - http://stephane.ducasse.free.fr/FreeBooks.html
 
 Take a ***detailed tour*** which creates a Package and a GitHub repository for it
-- https://github.com/Cuis-Smalltalk/Learning-Cuis/blob/master/SamplePackage1.md
+- https://github.com/DrCuis/How-to-guides/blob/main/300-Packaging/README.md
 
 ***Subscribe*** and ask questions at the ***Cuis developers email*** list
 - https://lists.cuis.st/mailman/listinfo/cuis-dev
