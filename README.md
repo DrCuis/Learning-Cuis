@@ -70,7 +70,7 @@ Look at the ***Terse Guide*** (World Menu -> Help -> Terse Guide to Cuis)
 Read ***About Cuis*** !!
 - https://github.com/Cuis-Smalltalk/Cuis-Smalltalk-Dev/blob/master/Documentation/AboutCuis.md
 
-Peruse ***Other Introductions to Smalltalk**
+Peruse ***Other Introductions to Smalltalk***
 - https://mvolkmann.github.io/blog/topics/#/blog/smalltalk/01-quick-introduction/?v=1.1.1
 
 Look at ***Documentation*** available for other wonderful Smalltalk implementations
