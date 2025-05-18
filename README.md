@@ -59,6 +59,9 @@ Take a look at ***Quick-UI-Tour***
 Read ***TheCuisBook***
 - https://drcuis.github.io/TheCuisBook/
 
+Check ***The Cuis Cookbook***
+- http://95.179.246.60/mediawiki/index.php/The_Cuis_Cookbook
+
 Take a look at how ***LayoutMorphs*** are used to maintain visual relations between graphic elements:
 - https://github.com/DrCuis/How-to-guides/blob/main/200-Layout/210-Layout-Tour/README.md
 
@@ -67,7 +70,10 @@ Look at the ***Terse Guide*** (World Menu -> Help -> Terse Guide to Cuis)
 Read ***About Cuis*** !!
 - https://github.com/Cuis-Smalltalk/Cuis-Smalltalk-Dev/blob/master/Documentation/AboutCuis.md
 
-Look at ***documentation*** available for other wonderful Smalltalk implementations
+Peruse ***Other Introductions to Smalltalk**
+- https://mvolkmann.github.io/blog/topics/#/blog/smalltalk/01-quick-introduction/?v=1.1.1
+
+Look at ***Documentation*** available for other wonderful Smalltalk implementations
 - http://squeak.org/documentation/
 - http://stephane.ducasse.free.fr/FreeBooks.html
 
