@@ -60,7 +60,7 @@ Read ***TheCuisBook***
 - https://drcuis.github.io/TheCuisBook/
 
 Check ***The Cuis Cookbook***
-- http://95.179.246.60/mediawiki/index.php/The_Cuis_Cookbook
+- https://github.com/nmingotti/The-Cuis-CookBook/wiki
 
 Take a look at how ***LayoutMorphs*** are used to maintain visual relations between graphic elements:
 - https://github.com/DrCuis/How-to-guides/blob/main/200-Layout/210-Layout-Tour/README.md
